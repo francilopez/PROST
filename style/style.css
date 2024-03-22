@@ -15,27 +15,23 @@
     
 }
 
-/* HEADER NAV */
+/* HEADER NAV*/
 
 nav{
     width: 100%;
     display: flex;
-    margin: auto;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
     width: 6.25rem;
     height: 4.1rem;
-    margin-top: 1rem;
-    margin-left: 20rem;
+    margin: 1rem;
+
 }
 
-nav li {
-    list-style: none;
-    margin-right: 20rem;
-    margin-top: 1.5rem;
-}
+
 
 /* MAIN */
 
@@ -51,21 +47,24 @@ nav li {
     background:none;
 }
 
-.AU{
-    display: flex;
-    margin-left: 20rem;
-    margin-top: 4rem;
-    font-size: 1.5rem;
-}
 
 .textAU {
     font-size: 1.2rem;
     word-spacing: 0.25rem;
-    margin:4rem;
-    margin-top: 3rem;
-    margin-left:20rem ;
-    margin-right: 20rem;
+    width: 80rem;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
 
+.contenedorabout{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    display: flex;
+    padding: 0;
 }
 
 .cli{
@@ -77,6 +76,13 @@ nav li {
     margin-top: 9rem;
 
 }
+
+
+
+
+
+
+
 
 /* SLIDER */
 
@@ -131,32 +137,31 @@ transform: translateZ(20px);
 
 }
 
-
-/*
-.slider::before,
-.slider::after {
-    background:linear-gradient(to right, #ffffff00  0%,
-     #ffffff 100%);
-    content: '';
-    height: 100%;
+.button {
+    width: 100%;
+    text-align: center;
     position: absolute;
-    width: 15%;
-    z-index: 2;
+    bottom: 20px;
 }
 
-.slider::before {
-    left: 0;
-    top: 0;
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid;
+    transition: 0.3s;
 }
 
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ('180deg');
+.button button:hover{
+    background: #a0f203;
+    color: #a0f203;
 }
 
 
-*/
+
 
 
 /* WHYUS */
@@ -195,18 +200,28 @@ transform: translateZ(20px);
 
 /*  CARRUSEL */
 
+
+
+.container-wrapper{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
 .container{
     position: absolute;
-    margin-top: 27rem;
     transform: translate(-50%, -50%);
-    left: 60rem;
     width: 1000px;
     height: 90%;
+    display: flex;
+    left: 50%;
+    top: 50%;
 }
+
 
 .container .slide1 .item{
     width: 200px;
-    height: 300px;
+    height: auto;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -214,16 +229,23 @@ transform: translateZ(20px);
     background-position: 50% 50%;
     background-size: cover;
     display: inline-block;
-    transition: 0.5s;
+    
+
+}
+
+.container .slide1 .item img{
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 .slide1 .item:nth-child(1),
 .slide1 .item:nth-child(2){
     top: 0;
     left: 0;
-    transform: translate(0, 0);
+    transform: translate(0,0);
     border-radius: 0;
-    width: 100%;
+    width: 1px;
     height: 100%;
 }
 
@@ -252,7 +274,7 @@ transform: translateZ(20px);
     left: 100px;
     width: 350px;
     text-align: left;
-    color: #eee;
+    color: #4a1e1e;
     transform: translate(0, -50%);
     display: none;
 }
@@ -300,23 +322,24 @@ transform: translateZ(20px);
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
 }
 
 .button button{
     width: 40px;
     height: 35px;
-    border-radius: 8px;
+    
     border: none;
     cursor: pointer;
     margin: 0 5px;
     border: 1px solid #000;
     transition: 0.3s;
+    color: #a0f203;
 }
 
 .button button:hover{
-    background: #ababab;
-    color: #fff;
+    background: #a0f203;
+    color: #a0f203;
 }
 
 
