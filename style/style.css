@@ -224,16 +224,18 @@ transform: translateZ(20px);
     .contenedorWU{
         flex-wrap: wrap;
     }
+
     
     .txtwu1{
         margin-left: 0;
     }
 
+    .contenedorWU .wutitulo h1 {
+        font-size: 7rem;
+    }
     .wutitulo{
-    color: #000000;
-    font-size: 8rem;
-    background: none;
-}
+        font-size: 7rem;
+    }
 }
 
 /*  CARRUSEL */
