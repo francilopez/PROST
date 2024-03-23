@@ -228,6 +228,12 @@ transform: translateZ(20px);
     .txtwu1{
         margin-left: 0;
     }
+
+    .wutitulo{
+    color: #000000;
+    font-size: 8rem;
+    background: none;
+}
 }
 
 /*  CARRUSEL */
