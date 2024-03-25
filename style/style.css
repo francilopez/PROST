@@ -25,12 +25,11 @@ nav{
 }
 
 .logo{
-    width: 6.25rem;
-    height: 4.1rem;
+    width: 5rem;
+    height: 3rem;
     margin: 1rem;
 
 }
-
 
 
 /* MAIN */
@@ -138,28 +137,6 @@ transform: translateZ(20px);
 
 }
 
-.button {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-}
-
-.button button{
-    width: 40px;
-    height: 35px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    border: 1px solid;
-    transition: 0.3s;
-}
-
-.button button:hover{
-    background: #a0f203;
-    color: #a0f203;
-}
 
 
 
@@ -230,12 +207,20 @@ transform: translateZ(20px);
         margin-left: 0;
     }
 
+    .txtwu{
+        font-size: 1rem;
+    }
+
     .contenedorWU .wutitulo h1 {
         font-size: 7rem;
         text-align: center;
     }
     .wutitulo{
         font-size: 7rem;
+    }
+
+    .textAU {
+        font-size: 1rem;
     }
 }
 
@@ -247,6 +232,8 @@ transform: translateZ(20px);
     position: relative;
     width: 100%;
     height: 90vh;
+    display: flex;
+    overflow: hidden;
 }
 
 .container{
@@ -367,21 +354,21 @@ transform: translateZ(20px);
 }
 
 .button button{
+    background: none;
     width: 40px;
     height: 35px;
-    
+    border-radius: 20px;
     border: none;
     cursor: pointer;
     margin: 0 5px;
-    border: 1px solid #000;
-    transition: 0.3s;
-    color: #a0f203;
+    border: 1px solid #000000;
+    transition: width 0.3s ease;
 }
 
-.button button:hover{
-    background: #a0f203;
-    color: #a0f203;
-}
 
+ button:hover{
+    width: 50px;
+    
+}
 
 
